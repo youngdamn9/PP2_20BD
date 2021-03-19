@@ -1,2 +1,2 @@
-Alan Saudabekov\n
+Alan Saudabekov
 PP2_20BD
