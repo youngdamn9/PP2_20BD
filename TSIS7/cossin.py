@@ -51,10 +51,12 @@ while run:
         y += 40
     x = 50
     for i in range(len(radians)):
-        screen.blit(font.render(radians[i], 1, black), (x, height - 80))
-        if i % 2 == 1:
-            pygame.draw.line(screen, black, (x, height - 65), (x + 20, height - 65))
-            screen.blit(font.render('2', 1, black), (x + 5, height - 66))
+        if i % 2 == 0:
+            screen.blit(font.render(radians[i], 1, black), (x, height - 80))
+        else:
+            screen.blit(font.render(radians[i], 1, black), (x, height - 83))
+            pygame.draw.line(screen, black, (x, height - 68), (x + 20, height - 68))
+            screen.blit(font.render('2', 1, black), (x + 5, height - 69))
         x += 40
 
     font = pygame.font.SysFont('comicsansms', 18)
